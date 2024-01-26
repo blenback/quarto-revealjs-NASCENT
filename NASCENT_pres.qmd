@@ -1,0 +1,14 @@
+---
+title: "NASCENT-Peru"
+subtitle: Participatory process planning meeting
+author:
+  - name: Ben Black
+    orcid: 0000-0002-8113-2114
+    email: bblack@ethz.ch
+    affiliations: "Planning of Landscape and Urban Systems (PLUS), ETH Zurich"
+date: last-modified
+format: NASCENT-revealjs
+---
+
+## Quarto
+

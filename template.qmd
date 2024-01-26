@@ -1,6 +1,6 @@
 ---
 title: "NASCENT-Peru"
-subtitle: Participatory process planning meeting
+subtitle:  meeting
 author:
   - name: Ben Black
     orcid: 0000-0002-8113-2114

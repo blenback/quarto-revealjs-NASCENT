@@ -15,6 +15,7 @@ contributes:
       cap-location: bottom
       preview-links: true
       self-contained: true
+      preload-iframes: true
       title-slide-attributes:
         data-background-image: NASCENT_title_banner.png
         data-background-size: contain

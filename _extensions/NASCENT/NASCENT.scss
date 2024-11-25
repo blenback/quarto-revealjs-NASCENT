@@ -42,8 +42,6 @@ $selection-bg: #26351c !default;
 
 
 /*-- scss:rules --*/
-
-
 .reveal .v-center-container {
   display: flex;
   justify-content: center;
@@ -90,6 +88,16 @@ $selection-bg: #26351c !default;
     font-size: 1.4em;
     // font-weight: 350;
     font-weight: lighter;
+  }
+  
+  .reveal .title-image {
+    display: block !important;
+    position: fixed !important;
+    right: 10px !important;
+    max-height: 15% !important;
+    height: 100% !important;
+    width: auto !important;
+    color: $body-color !important;
   }
 
   .subtitle {
@@ -209,8 +217,8 @@ $selection-bg: #26351c !default;
 
 .reveal .slide-menu-button {
   position: fixed;
-  top: 6px;
-  right: 0;
+  left: 10px !important;
+  bottom: 10px !important;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -221,6 +229,43 @@ $selection-bg: #26351c !default;
   pointer-events: auto;
 }
 
+// Logo
+.reveal .slide-logo {
+  display: block !important;
+  position: fixed !important;
+  top: 10px !important;
+  right: 20px !important;
+  max-height: 10% !important;
+  height: 100% !important;
+  width: auto !important;
+  color: $body-color !important;
+}
+
+.reveal .slide-logo-title {
+    visibility: hidden;
+  }
+  
+.reveal .slide-logo > a[href*='title-slide'] {
+  visibility: hidden;
+}
+
+.reveal .slide-logo > a[href*='closing'] {
+  visibility: hidden;
+}
+
+
+// Slide number
+.reveal .slide-number,
+.reveal.has-logo .slide-number {
+  bottom: 10px !important;
+  right: 10px !important;
+  top: unset !important;
+  color: $body-color !important;
+}
+
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
+}
 
 // Same for chalkboard buttons (with an offset)
 

@@ -6,6 +6,7 @@ contributes:
   formats:
     revealjs:
       theme: [default, NASCENT.scss]
+      logo: assets/NASCENT_logo_horizontal.jpg
       embed-resources: true
       pdf-max-pages-per-slide: 1
       menu:
@@ -17,6 +18,54 @@ contributes:
       self-contained: true
       preload-iframes: true
       title-slide-attributes:
-        data-background-image: NASCENT_title_banner.png
-        data-background-size: contain
-
+        data-background-image: assets/NASCENT_title_background.png
+        data-background-size: 100%
+      include-after-body:
+        text: |
+          <!-- chunk for removing logo from title slide -->
+          <section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+            <script>
+              window.addEventListener("DOMContentLoaded", () => {
+                function update_logo_classes(event) {
+                  let logo = document.getElementsByClassName("slide-logo")[0];
+                  let slide = Reveal.getCurrentSlide();
+      
+                  if (slide.id == "title-slide") { 
+                  logo.classList.add("slide-logo-title");
+                  } else if (slide.id == "closing-id"){
+                  logo.classList.add("slide-logo-title");
+                  } else {
+                  logo.classList.remove("slide-logo-title");
+                  }
+                }
+    
+              Reveal.on('ready', update_logo_classes);
+              Reveal.on('slidechanged', update_logo_classes);
+              })
+            </script>
+          </section>
+          
+          <!-- chunk for removing logo from closing slide -->
+            <script>
+              window.addEventListener("DOMContentLoaded", () => {
+                function update_logo_classes(event) {
+                  let logo = document.getElementsByClassName("slide-logo")[0];
+                  let slide = Reveal.getCurrentSlide();
+      
+                  if (slide.id == "title-slide") { 
+                  logo.classList.add("slide-logo-title");
+                  } else if (slide.id == "closing-id"){
+                  logo.classList.add("slide-logo-title");
+                  } else {
+                  logo.classList.remove("slide-logo-title");
+                  }
+                }
+    
+              Reveal.on('ready', update_logo_classes);
+              Reveal.on('slidechanged', update_logo_classes);
+              })
+            </script>
+          
+          
+          
+          

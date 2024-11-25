@@ -1,6 +1,7 @@
 ---
-title: "NASCENT-Peru"
-subtitle:  meeting
+title: "Presentation title"
+subtitle:  event
+title-image: NASCENT_logo_horizontal.jpg
 author:
   - name: Ben Black
     orcid: 0000-0002-8113-2114
@@ -10,5 +11,24 @@ date: last-modified
 format: NASCENT-revealjs
 ---
 
-## Quarto
+## Team
+
+<br/>
+![](_extensions/NASCENT/assets/team_portrait.png){fig-align="center"}
+
+## Acknowledgements
+
+We would like to thank the Swiss Re Foundation, Swiss Re Institute, EY, WWF, AXA Research Fund, and Swiss Re Corporate Solutions for financial support of this project
+
+<br/>
+![](_extensions/NASCENT/assets/funders.png){fig-align="center"}
+
+
+# {#closing-id data-menu-title="Closing slide" background-image="_extensions/NASCENT/assets/closing_slide.png"}
+
+Thank for you listening
+
+I will now answer any questions.
+
+
 
